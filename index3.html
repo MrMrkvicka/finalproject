@@ -40,8 +40,9 @@
         }
     </style>
 </head>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark  " data-bs-theme="dark">
-        <a class="navbar-brand" href="index.html"> Dom</a>
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark  " data-bs-theme="dark">
+    <div class="container-fluid">
+        <a class="navbar-brand " href="index.html"> Dom</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -53,6 +54,8 @@
                     <li class="nav-item">
                         <a class="nav-link" href="index9.html">pomoc</a>
                     </li>
+
+
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle bg-dark" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">různé případy</a>
                         <div class="dropdown-menu">
@@ -62,7 +65,9 @@
   
                         </div>
                       </li>
-                    
+
+
+
                 </ul >
 
                 <ul class="nav navbar-nav navbar-right">
@@ -74,50 +79,44 @@
                     </li>
                 </ul>
             </div>
-    </nav>
+    </div>
+</nav>
     <body>
         <div class="container w-50">
             <h1 class="text-center">registrace</h1>
             <form action="">
 
-                <div class="mb-3 mt-3 form-floating ">
-                    <input class="form-control" type="text" id="name" name="name">
+                <div class="mb-3 mt-3  ">
                     <label  for="name">jméno:</label><br>
+                    <input class="form-control" type="text" style="background-color: rgba(51, 49, 49, 0.233);"  class="form-control" id="email" placeholder="jméno" name="email">
                 </div>
 
-                <div class="mb-3 mt-3 form-floating">
-                    <input class="form-control" type="text" id="surname" name="surname">
+                <div class="mb-3 mt-3 ">
                     <label   for="pass">příjmení</label><br>
+                    <input class="form-control" type="text" style="background-color: rgba(51, 49, 49, 0.233);"class="form-control" id="email" placeholder="příjmení" name="email">
                 </div>
 
-                <div class="mb-3 mt-3 form-floating">
-                    <input class="form-control" type="text" id="email" name="mail">
+                <div class="mb-3 ">
                     <label  for="mail">mail:</label><br>   
+                    <input class="form-control" type="text" style="background-color: rgba(51, 49, 49, 0.233);"class="form-control" id="email" placeholder="email" name="email">
                 </div>
 
-                <div class="mb-3 mt-3 form-floating">
-                    <input class="form-control" type="password" id="password" name="password">
+                <div class="mb-3 mt-3 ">
                     <label  for="password">heslo:</label><br>
+                    <input class="form-control" type="password" style="background-color: rgba(51, 49, 49, 0.233);"class="form-control" id="email" placeholder="heslo" name="email">
                 </div>
 
-                <div class="mb-3 mt-3 form-floating">
-                    <input class="form-control" type="password" id="password" name="password">
+                <div class="mb-3 mt-3 ">
                     <label  for="password">heslo znovu:</label> <br>
+                    <input class="form-control" type="password" style="background-color: rgba(51, 49, 49, 0.233);"class="form-control" id="email" placeholder="heslo znovu" name="email">
                 </div>
 
-                <div class="mb-3 mt-3 form-floating">
-                    <input class="form-control" type="text" id="text" name="otrok">
-                    <label  for="password">oblíbená barva otroka:</label> <br>
-                </div>
 
-                <div class="mb-3 mt-3 form-floating">
-                    <input class="form-control" type="text" id="text" name="otrok">
-                    <label  for="password">oblíbená barva otroka:</label> <br>
-                </div>
 
                 <div>
                     <label for="dob"></label>
-                    <select id="dob" name="dob" class="form-select">
+                    <label  for="password">země:</label> <br>
+                    <select id="dob" name="dob" class="form-select"style="background-color: rgba(51, 49, 49, 0.233);">
                         <option disabled selected required value="">země</option>
                         <option value="volvo">Česko</option>
                         <option value="saab">Polsko</option>
@@ -137,7 +136,8 @@
 
                 <div>
                     <label for="dob"></label>
-                    <select id="dob" name="dob" class="form-select">
+                    <label  for="password">rok narození:</label> <br>
+                    <select id="dob" name="dob" class="form-select"style="background-color: rgba(51, 49, 49, 0.233);">
                         <option disabled selected required value="">narození</option>
                         <option value="volvo">1974</option>
                         <option value="saab">1975</option>
