@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootswatch/dist/slate/bootstrap.min.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/css/carousel-size.css">
+    <style>
+        body {
+            background-color: #343a40; /* tmavě šedá pozadí */
+            color: #ffffff; /* bílá barva textu */
+        }
+        .navbar {
+            background-color: #212529 !important; /* tmavě šedá pozadí pro navbar */
+        }
+        .navbar-brand, .nav-link {
+            color: #ffffff !important; /* bílý text pro odkazy v navbaru */
+        }
+        .navbar-toggler-icon {
+            background-color: #ffffff; /* bílá barva pro ikonu toggle */
+        }
+        .carousel-dark .carousel-control-prev-icon,
+        .carousel-dark .carousel-control-next-icon {
+            filter: invert(1); /* inverze ikon pro předchozí a další */
+        }
+
+        footer {
+            background-color: #212529; /* tmavě šedá pozadí pro patičku */
+            color: #ffffff; /* bílá barva textu v patičce */
+        }
+        footer a {
+            color: #ffffff; /* bílý text pro odkazy v patičce */
+        }
+        footer a:hover {
+            color: #6c757d; /* šedý text pro odkazy v patičce po najetí myší */
+        }
+    </style>
+</head>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark  " data-bs-theme="dark">
+        <a class="navbar-brand" href="index.html"> Dom</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index5.html">kontakt</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index9.html">pomoc</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle bg-dark" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">různé případy</a>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item " href="index6.html">případ 1</a>
+                          <a class="dropdown-item " href="index7.html">případ 2</a>
+                          <a class="dropdown-item " href="index8.html">případ 3</a>
+  
+                        </div>
+                      </li>
+                    
+                </ul >
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="nav-item ">
+                        <a class="nav-link " href="index2.html">přihlášení</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="index3.html">Registrace</a>
+                    </li>
+                </ul>
+            </div>
+    </nav>
+    <body>
+        <div class="container w-50">
+            <h1 class="text-center">registrace</h1>
+            <form action="">
+
+                <div class="mb-3 mt-3 form-floating ">
+                    <input class="form-control" type="text" id="name" name="name">
+                    <label  for="name">jméno:</label><br>
+                </div>
+
+                <div class="mb-3 mt-3 form-floating">
+                    <input class="form-control" type="text" id="surname" name="surname">
+                    <label   for="pass">příjmení</label><br>
+                </div>
+
+                <div class="mb-3 mt-3 form-floating">
+                    <input class="form-control" type="text" id="email" name="mail">
+                    <label  for="mail">mail:</label><br>   
+                </div>
+
+                <div class="mb-3 mt-3 form-floating">
+                    <input class="form-control" type="password" id="password" name="password">
+                    <label  for="password">heslo:</label><br>
+                </div>
+
+                <div class="mb-3 mt-3 form-floating">
+                    <input class="form-control" type="password" id="password" name="password">
+                    <label  for="password">heslo znovu:</label> <br>
+                </div>
+
+                <div class="mb-3 mt-3 form-floating">
+                    <input class="form-control" type="text" id="text" name="otrok">
+                    <label  for="password">oblíbená barva otroka:</label> <br>
+                </div>
+
+                <div class="mb-3 mt-3 form-floating">
+                    <input class="form-control" type="text" id="text" name="otrok">
+                    <label  for="password">oblíbená barva otroka:</label> <br>
+                </div>
+
+                <div>
+                    <label for="dob"></label>
+                    <select id="dob" name="dob" class="form-select">
+                        <option disabled selected required value="">země</option>
+                        <option value="volvo">Česko</option>
+                        <option value="saab">Polsko</option>
+                        <option value="fiat">Slovensko</option>
+                        <option value="saab">Německo</option>
+                        <option value="fiat">Ukrajina</option>
+                        <option value="saab">Rakousko</option>
+                        <option value="fiat">Itálie</option>
+                        <option value="saab">Slovinsko</option>
+                        <option value="fiat">Maďarsko</option>
+                        <option value="saab">Francie</option>
+                        <option value="fiat">Španělsko</option>
+                        
+                    </select>
+                </div>
+
+
+                <div>
+                    <label for="dob"></label>
+                    <select id="dob" name="dob" class="form-select">
+                        <option disabled selected required value="">narození</option>
+                        <option value="volvo">1974</option>
+                        <option value="saab">1975</option>
+                        <option value="fiat">1976</option>
+                        <option value="saab">1977</option>
+                        <option value="fiat">1978</option>
+                        <option value="saab">1979</option>
+                        <option value="fiat">1980</option>
+                        <option value="saab">1981</option>
+                        <option value="fiat">1982</option>
+                        <option value="saab">1983</option>
+                        <option value="fiat">1984</option>
+                        <option value="saab">1985</option>
+                        <option value="fiat">1986</option>
+                        <option value="saab">1987</option>
+                        <option value="fiat">1988</option>
+                        <option value="saab">1989</option>
+                        <option value="fiat">1990</option>
+                        <option value="saab">1991</option>
+                        <option value="fiat">1992</option>
+                        <option value="saab">1993</option>
+                        <option value="fiat">1994</option>
+                        <option value="saab">1995</option>
+                        <option value="fiat">1996</option>
+                        <option value="saab">1997</option>
+                        <option value="fiat">1998</option>
+                        <option value="saab">1999</option>
+                        <option value="fiat">2000</option>
+                        <option value="saab">2001</option>
+                        <option value="fiat">2002</option>
+                        <option value="saab">2003</option>
+                        <option value="fiat">2004</option>
+                        <option value="saab">2005</option>
+                        <option value="fiat">2006</option>
+                        <option value="saab">2007</option>
+                        <option value="fiat">2008</option>
+                        <option value="saab">2009</option>
+                        <option value="fiat">2010</option>
+                        <option value="saab">2011</option>
+                        <option value="fiat">2012</option>
+                        <option value="saab">2013</option>
+                        <option value="fiat">2014</option>
+                        <option value="saab">2015</option>
+                        <option value="fiat">2016</option>
+                        <option value="fiat">2017</option>
+                        <option value="fiat">2018</option>
+                        <option value="fiat">2019</option>
+                        <option value="audi">2020</option>
+                    </select>
+                </div>
+                
+
+                <button type="submit" class="btn btn-primary mt-3 btn-danger ">Submit</button>
+            </form>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    
+        <footer class="fixed-bottom bg-dark text-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 pt-3">
+                        <p class="p-0 m-0">Authors:</p>
+                        <p class="p-0 m-0">Tomáš Kotuč</p>
+                        <p class="p-0 m-0">Fabian Schlatter</p>
+                    </div>
+                    <div class="col-4 text-center pt-5">
+                        <p>&copy; 2009-2024 SHEIN All Rights Reserved.</p>
+                    </div>
+                    <div class="col-4 text-center pt-3">
+                        <p><a class="link-light" href="https://github.com/mentos120/WebProjektKotucSchlatter" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> GitHub</a></p>
+                        <p><a class="link-light" href="#" target="_blank" rel="noopener noreferrer"><i class="fa fa-file"></i> Documentation</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+    </html>
